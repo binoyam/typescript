@@ -6,6 +6,8 @@ import SingleTodo from "./SingleTodo";
 interface Props {
   todos: Todo[];
   setTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
+  completedTodos: Todo[];
+  setCompletedTodos: React.Dispatch<React.SetStateAction<Todo[]>>;
 }
 
 const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
@@ -22,7 +24,7 @@ const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
           />
         ))}
       </div>
-        <div className="remove todos">
+      <div className="remove todos">
         <span className="todos__heading">Completed Tasks</span>
         {todos.map((todo) => (
           <SingleTodo
@@ -32,7 +34,7 @@ const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
             setTodos={setTodos}
           />
         ))}
-        </div>
+      </div>
     </div>
   );
 };
