@@ -1,5 +1,4 @@
 import React, {
-  HTMLInputTypeAttribute,
   useEffect,
   useRef,
   useState,
@@ -44,7 +43,7 @@ const SingleTodo: React.FC<Props> = ({ todo, todos, setTodos }) => {
     inputRef.current?.focus();
   }, [edit]);
 
-  
+
   return (
     <form className="todos__single" onSubmit={(e) => handleEdit(e, todo.id)}>
       {edit ? (

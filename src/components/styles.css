@@ -45,6 +45,7 @@
   box-shadow: 0 0 5px black;
 }
 .todos {
+  width: 90%;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
