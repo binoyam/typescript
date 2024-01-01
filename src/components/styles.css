@@ -88,9 +88,9 @@
   transform: scale(1.03);
 }
 
-/* .drag {
+.drag {
   box-shadow: 0 0 20px black;
-} */
+}
 
 .todos__single--text {
   flex: 1;
